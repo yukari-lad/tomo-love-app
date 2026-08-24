@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ともくん大好きアプリ</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #ffd6e8, #d6e8ff);
+    font-family: "Hiragino Sans", sans-serif;
+  }
+  button {
+    font-size: 24px;
+    padding: 24px 48px;
+    border: none;
+    border-radius: 20px;
+    background: #ff6fa5;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #cc4f82;
+  }
+  button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #cc4f82;
+  }
+  #message {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #d6336c;
+    min-height: 40px;
+  }
+  .wrap { text-align: center; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <button onclick="document.getElementById('message').textContent = 'ともくん大好き 💕'">
+      押してみて
+    </button>
+    <div id="message"></div>
+  </div>
+</body>
+</html>
